@@ -4,17 +4,21 @@ body {
 }
 .container {
   background-color: #E0E0E0;
+  padding: 0px;
 }
-.zenbook > h1 {
-  color: #f5f5f5;
-  font-size: 24px;
-  margin: 17px 0px;
+.row {
+  margin: 0px;
 }
 
 /*NAVIGATION*/
 .nav {
   background-color: #673AB7;
   height: 60px;
+}
+.zenbook > h1 {
+  color: #f5f5f5;
+  font-size: 24px;
+  margin: 17px 0px;
 }
 .note-compose {
   border: none;
@@ -51,6 +55,9 @@ body {
 }
 .note-priority > .col-sm-4 {
   padding: 10px 0px 5px 0px;
+}
+.priority {
+  color: #616161;
 }
 .note-high {
   background-color: #F44336;
