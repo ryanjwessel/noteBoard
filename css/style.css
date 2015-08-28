@@ -1,17 +1,15 @@
 /* BEGIN CUSTOM STYLING HERE */
 body {
-    background-color: #CFD8DC;
+  background-color: #311B92;
+}
+.container {
+  background-color: #E9EAED;
 }
 
 /*NAVIGATION*/
-.navbar-default {
-    background-color: #651FFF;
+.nav {
+  height: 60px;
 }
-.navbar-brand {
-    font-size: 24px;
-    margin-left: 10px!important;
-    color: #fff!important;
-}
-.navbar-brand:hover {
-    color: #fff!important;
+.nav > h1, h2 {
+  font-size: 24px;
 }
