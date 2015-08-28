@@ -30,13 +30,13 @@ body {
 /*NOTES*/
 .note-wrap {
   background-color: white;
-  margin: 10px -15px 10px -15px;
+  margin: 10px 0px;
 }
 .note {
   height: 90px;
 }
 .note-text {
-  padding: 10px;
+  padding: 10px 0px 0px 0px;
   font-size: 15px;
   margin-bottom: 0px;
   height: 80px;
@@ -57,7 +57,7 @@ body {
   padding: 10px 0px 5px 0px;
 }
 .priority {
-  color: #616161;
+  color: #424242;
 }
 .note-high {
   background-color: #F44336;
