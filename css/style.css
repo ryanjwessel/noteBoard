@@ -1,6 +1,6 @@
 /* BEGIN CUSTOM STYLING HERE */
 body {
-  background-color: #311B92;
+  background-color: #EDE7F6;
 }
 .container {
   background-color: #E9EAED;
@@ -11,7 +11,7 @@ h1, h2 {
 
 /*NAVIGATION*/
 .nav {
-  background-color: white;
+  background-color: #673AB7;
   height: 60px;
 }
 
