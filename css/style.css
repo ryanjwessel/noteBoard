@@ -16,6 +16,12 @@ body {
   background-color: #673AB7;
   height: 60px;
 }
+.note-compose {
+  border: none;
+  background-color: transparent;
+  padding: 3px 6px;
+  margin: 11px 0px;
+}
 
 /*NOTES*/
 .note-wrap {
