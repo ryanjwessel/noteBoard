@@ -3,10 +3,12 @@ body {
   background-color: #EDE7F6;
 }
 .container {
-  background-color: #E9EAED;
+  background-color: #BDBDBD;
 }
-h1, h2 {
+.zenbook > h1 {
+  color: #f5f5f5;
   font-size: 24px;
+  margin: 17px 0px;
 }
 
 /*NAVIGATION*/
