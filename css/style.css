@@ -16,7 +16,13 @@ h1, h2 {
 }
 
 /*NOTES*/
-.row.note-wrap {
-    background-color: white;
-    margin: 10px -15px 10px -15px;
+.note-wrap {
+  background-color: white;
+  margin: 10px -15px 10px -15px;
+}
+.note {
+  height: 90px;
+}
+.note-text {
+  padding: 10px;
 }
