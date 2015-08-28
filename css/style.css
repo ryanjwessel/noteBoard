@@ -25,4 +25,14 @@ h1, h2 {
 }
 .note-text {
   padding: 10px;
+  font-size: 15px;
+  margin-bottom: 0px;
+  height: 80px;
+  max-height: 80px;
+}
+.note-delete {
+}
+.note-time {
+  margin: 0px;
+  border-bottom: 3px solid #ccc;
 }
