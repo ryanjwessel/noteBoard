@@ -5,11 +5,12 @@ body {
 .container {
   background-color: #E9EAED;
 }
+h1, h2 {
+  font-size: 24px;
+}
 
 /*NAVIGATION*/
 .nav {
+  background-color: white;
   height: 60px;
-}
-.nav > h1, h2 {
-  font-size: 24px;
 }
