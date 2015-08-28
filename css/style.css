@@ -43,9 +43,12 @@ body {
   max-height: 80px;
 }
 .note-delete {
-  margin: 5px 10px;
+  margin-top: 10px;
   border: none;
   background-color: transparent;
+}
+.note-delete > img {
+  height: 20px;
 }
 .note-time {
   margin: 0px;
