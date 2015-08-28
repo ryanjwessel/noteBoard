@@ -31,8 +31,24 @@ h1, h2 {
   max-height: 80px;
 }
 .note-delete {
+  margin: 5px 10px;
 }
 .note-time {
   margin: 0px;
   border-bottom: 3px solid #ccc;
+}
+.note-priority {
+  margin: 0px;
+}
+.note-priority > .col-sm-4 {
+  padding: 10px 0px 5px 0px;
+}
+.note-high {
+  background-color: #F44336;
+}
+.note-med {
+  background-color: #FFEB3B;
+}
+.note-low {
+  background-color: #4CAF50;
 }
