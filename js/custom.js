@@ -13,7 +13,7 @@
 //   localStorage.setItem('notes', JSON.stringify(notes));
 //
 // };
-$(".note-submit").click(function() {
+$(".note-enter").click(function() {
     //Get value from text input
     var note = JSON.stringify({ text : $("#note-content").val() }),
 
