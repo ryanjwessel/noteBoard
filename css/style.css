@@ -57,11 +57,13 @@ body {
 .note-priority {
   margin: 0px;
 }
-.note-priority > .col-sm-4 {
-  padding: 10px 0px 5px 0px;
-}
 .priority {
   color: #424242;
+}
+.np {
+  border: none;
+  background-color: transparent;
+  padding: 10px 0px;
 }
 .note-high {
   background-color: #F44336;
