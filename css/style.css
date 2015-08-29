@@ -36,19 +36,17 @@ body {
   padding: 5px;
   font-size: 16px;
   margin: 13px 0px;
-  height: 80px;
-  max-height: 80px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #ccc;
 }
 .note-delete {
-  margin: 16.5px 0px;
+  margin: 17.5px 0px;
   border: none;
   background-color: transparent;
 }
 .note-delete > img {
-  height: 20px;
+  height: 18px;
 }
 .note-time {
   margin: 0px;
@@ -70,16 +68,19 @@ body {
 }
 .np-high:hover {
   background-color: #D32F2F;
+  color: #eee;
 }
 .np-med {
   background-color: #FFEB3B;
 }
 .np-med:hover {
   background-color: #FBC02D;
+  color: #757575;
 }
 .np-low {
   background-color: #4CAF50;
 }
 .np-low:hover {
   background-color: #388E3C;
+  color: #f5f5f5;
 }
