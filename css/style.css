@@ -36,11 +36,12 @@ body {
   height: 90px;
 }
 .note-text {
-  padding: 10px 0px 0px 0px;
+  padding: 5px;
   font-size: 15px;
-  margin-bottom: 0px;
+  margin: 10px 0px;
   height: 80px;
   max-height: 80px;
+  width: 100%;
 }
 .note-delete {
   margin-top: 10px;
