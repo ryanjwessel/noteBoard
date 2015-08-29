@@ -6,7 +6,7 @@ function notePush() {
   // Get value from text input
   var note = document.getElementById('note-content').value;
 
-  var notes = localStorage.setItem("note");
+  var notes = localStorage.setItem('note', note);
 
 };
 
