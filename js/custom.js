@@ -14,7 +14,6 @@
 //
 // };
 $(".note-submit").click(function() {
-  if ('localStorage' in window && window['localStorage'] !== null) {
     //Get value from text input
     var note = JSON.stringify({ text : $("#note-content").val() }),
 
@@ -27,7 +26,4 @@ $(".note-submit").click(function() {
 
     localStorage.setItem("note", JSON.stringify(notes));
     console.log("The data was saved.");
-    } else {
-        alert('Cannot store user preferences as your browser do not support local storage');
-    }
 });

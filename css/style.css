@@ -40,6 +40,10 @@ body {
   border: none;
   border-bottom: 1px solid #ccc;
 }
+.note-submit {
+  border: none;
+  background-color: transparent;
+}
 .note-enter {
   margin: 17.5px 0px;
   border: none;
