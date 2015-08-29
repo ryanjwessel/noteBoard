@@ -40,12 +40,12 @@ body {
   border: none;
   border-bottom: 1px solid #ccc;
 }
-.note-delete {
+.note-submit {
   margin: 17.5px 0px;
   border: none;
   background-color: transparent;
 }
-.note-delete > img {
+.note-submit > img {
   height: 18px;
 }
 .note-time {

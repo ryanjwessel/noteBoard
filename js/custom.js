@@ -13,8 +13,7 @@
 //   localStorage.setItem('notes', JSON.stringify(notes));
 //
 // };
-
-$(function notePush(event) {
+$(".note-submit").click(function() {
   if ('localStorage' in window && window['localStorage'] !== null) {
     //Get value from text input
     var note = JSON.stringify({ text : $("#note-content").val() }),
