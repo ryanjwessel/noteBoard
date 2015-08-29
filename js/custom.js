@@ -14,9 +14,7 @@
 //
 // };
 
-$(function notePush(a) {
-  a.preventDefault();
-
+$(function notePush(event) {
   if ('localStorage' in window && window['localStorage'] !== null) {
       try {
           //Get value from text input
