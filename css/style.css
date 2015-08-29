@@ -32,19 +32,18 @@ body {
   background-color: white;
   margin: 10px 0px;
 }
-.note {
-  height: 90px;
-}
 .note-text {
   padding: 5px;
-  font-size: 15px;
-  margin: 10px 0px;
+  font-size: 16px;
+  margin: 13px 0px;
   height: 80px;
   max-height: 80px;
   width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 .note-delete {
-  margin-top: 10px;
+  margin: 16.5px 0px;
   border: none;
   background-color: transparent;
 }
