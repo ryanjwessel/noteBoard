@@ -17,7 +17,7 @@
 $(function notePush(event) {
   if ('localStorage' in window && window['localStorage'] !== null) {
     //Get value from text input
-    var note = JSON.stringify( note : $("#note-content").val() ),
+    var note = JSON.stringify({ text : $("#note-content").val() }),
 
     //Parse the notes, create an array so I can create multiple notes
     notes = localStorage.getItem('note');
