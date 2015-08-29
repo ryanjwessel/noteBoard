@@ -23,10 +23,11 @@
       <!--NOTES TEMPLATE-->
       <div class="row note-wrap">
 
-        <form class="note-form">
           <div class="row note">
             <div class="col-xs-10 col-sm-11">
-              <input type="text" class="note-text" placeholder="Type to compose a note" maxlength="59"></input>
+              <form class="note-submit">
+                <input type="text" class="note-text" id="note-content" placeholder="Type to compose a note" maxlength="59"></input>
+              </form>
             </div>
             <div class="col-xs-2 col-sm-1 text-right">
               <button class="note-delete"><img src="icon/delete.png"></button>
@@ -44,7 +45,6 @@
               <button class="btn-block np np-low">LOW</button>
             </div>
           </div>
-        </form>
 
       </div>
 
