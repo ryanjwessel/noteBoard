@@ -30,11 +30,6 @@ $(function notePush(event) {
           localStorage.setItem("note", JSON.stringify(notes));
           console.log("The data was saved.");
           return true;
-      } catch (error) {
-          if (error == QUOTA_EXCEEDED_ERR) {
-              alert('Quota exceeded!');
-          }
-      }
       } else {
           alert('Cannot store user preferences as your browser do not support local storage');
       }
