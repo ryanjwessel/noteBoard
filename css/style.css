@@ -40,12 +40,12 @@ body {
   border: none;
   border-bottom: 1px solid #ccc;
 }
-.note-submit {
+.note-enter {
   margin: 17.5px 0px;
   border: none;
   background-color: transparent;
 }
-.note-submit > img {
+.note-enter > img {
   height: 18px;
 }
 .note-time {
