@@ -18,39 +18,33 @@
         <div class="col-sm-offset-5 col-sm-2 text-center zenbook">
           <h1>ZenBook</h1>
         </div>
-        <div class="col-sm-offset-4 col-sm-1 text-right">
-          <button class="note-compose"><img src="icon/compose.png" alt="Compose Note Icon"></button>
-        </div>
       </div>
 
       <!--NOTES TEMPLATE-->
       <div class="row note-wrap">
 
-        <div class="row note">
-          <div class="col-sm-10">
-            <p class="note-text">This will be where all the note text goes.This will be where all the note text goes.This will be where all the note text goes.This will be where all the note text goes.This will be where all the note text goes.</p>
+        <form class="note-form">
+          <div class="row note">
+            <div class="col-sm-10">
+              <input type="text" class="note-text" placeholder="Type to compose a note">This will be where all the note text goes.This will be where all the note text goes.This will be where all the note text goes.This will be where all the note text goes.This will be where all the note text goes.</input>
+            </div>
+            <div class="col-sm-offset-1 col-sm-1 text-right">
+              <button class="note-delete"><img src="icon/delete.png"></button>
+            </div>
           </div>
-          <div class="col-sm-offset-1 col-sm-1 text-right">
-            <button class="note-delete"><img src="icon/delete.png"></button>
-          </div>
-        </div>
-        <div class="row note-time">
-          <div class="col-sm-offset-10 col-sm-2">
-            <p class="note-date text-right">August 28, 06:15PM</p>
-          </div>
-        </div>
 
-        <div class="row note-priority">
-          <div class="col-sm-4 text-center note-high priority">
-            <p>HIGH</p>
+          <div class="row note-priority">
+            <div class="col-sm-4 text-center note-high priority">
+              <p>HIGH</p>
+            </div>
+            <div class="col-sm-4 text-center note-med priority">
+              <p>MEDIUM</p>
+            </div>
+            <div class="col-sm-4 text-center note-low priority">
+              <p>LOW</p>
+            </div>
           </div>
-          <div class="col-sm-4 text-center note-med priority">
-            <p>MEDIUM</p>
-          </div>
-          <div class="col-sm-4 text-center note-low priority">
-            <p>LOW</p>
-          </div>
-        </div>
+        </form>
 
       </div>
 
