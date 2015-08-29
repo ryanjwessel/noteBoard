@@ -16,21 +16,20 @@
 
 $(function notePush(event) {
   if ('localStorage' in window && window['localStorage'] !== null) {
-      try {
-          //Get value from text input
-          var note = $('#note-content')[0].val();
+    //Get value from text input
+    var note = $('#note-content')[0].val();
 
-          //Parse the notes, create an array so I can create multiple notes
-          notes = localStorage.getItem('note');
+    //Parse the notes, create an array so I can create multiple notes
+    notes = localStorage.getItem('note');
 
-          notes = notes ? JSON.parse(notes) : [];
+    notes = notes ? JSON.parse(notes) : [];
 
-          notes.push(note);
+    notes.push(note);
 
-          localStorage.setItem("note", JSON.stringify(notes));
-          console.log("The data was saved.");
-          return true;
-      } else {
-          alert('Cannot store user preferences as your browser do not support local storage');
-      }
+    localStorage.setItem("note", JSON.stringify(notes));
+    console.log("The data was saved.");
+    return true;
+    } else {
+        alert('Cannot store user preferences as your browser do not support local storage');
+    }
 });
