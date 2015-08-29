@@ -30,7 +30,7 @@ body {
 /*NOTES*/
 .note-wrap {
   background-color: white;
-  margin: 10px 0px;
+  margin-top: 10px;
 }
 .note-text {
   padding: 5px;
@@ -58,18 +58,28 @@ body {
 }
 .priority {
   color: #424242;
+  padding: 0px;
 }
 .np {
   border: none;
   background-color: transparent;
   padding: 10px 0px;
 }
-.note-high {
+.np-high {
   background-color: #F44336;
 }
-.note-med {
+.np-high:hover {
+  background-color: #D32F2F;
+}
+.np-med {
   background-color: #FFEB3B;
 }
-.note-low {
+.np-med:hover {
+  background-color: #FBC02D;
+}
+.np-low {
   background-color: #4CAF50;
+}
+.np-low:hover {
+  background-color: #388E3C;
 }
