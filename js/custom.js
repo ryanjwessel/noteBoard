@@ -3,10 +3,14 @@
 function notePush() {
   event.preventDefault();
 
+  // Set empty notes array
+  var notes = [];
   // Get value from text input
   var note = document.getElementById('note-content').value;
-
-  var notes = localStorage.setItem('note', note);
+  // Push most recent note into notes array
+  notes.push(note);
+  // Submit note to LocalStorage
+  localStorage.setItem('notes', JSON.stringify(notes));
 
 };
 
