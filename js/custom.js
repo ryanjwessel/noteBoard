@@ -20,7 +20,7 @@ function notePush() {
     console.log(parseNotes);
 
     for(i = 0; i < parseNotes.length; i++) {
-      $(".note-container").append("<div class=\"row note-wrap\"><div class=\"row note\"><div class=\"col-xs-12 col-sm-12\"><input type=\"text\" class=\"notes note-text\" maxlength=\"59\" placeholder=\"" + parseNotes[i] + "></input></div></div></div>");
+      $(".note-container").append("<div class=\"row note-wrap\"><div class=\"row note\"><div class=\"col-xs-12 col-sm-12\"><span class=\"notes note-text\"" + i "\">"parseNotes[i]"</span></div></div></div>");
     }
 
 };
