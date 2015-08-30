@@ -27,6 +27,6 @@ $(".note-enter").click(function() {
     localStorage.setItem("note", JSON.stringify(notes));
     console.log("The data was saved.");
 
-    var parse = JSON.parse(localStorage.getItem('notes'));
+    var parse = JSON.parse(localStorage.getItem('note'));
     console.log(parse);
 });
