@@ -19,10 +19,6 @@ function notePush() {
     var parseNotes = JSON.parse(localStorage.getItem('note'));
     console.log(parseNotes);
 
-    for(i = 0; i < parseNotes.length; i++) {
-      $(".note-container").append("<div class=\"row note-wrap\"><div class=\"row note\"><input type=\"text\" class=\"notes note-text\" maxlength=\"59\" placeholder=\"" + parseNotes[i] + "\"></input></div></div>");
-    }
-    
     // //Loop through the parseNotes array to display the notes below the note submission
     //   var noteText = parseNotes.text;
     //   var tmpl = $('#note-display').content;
@@ -37,6 +33,11 @@ function notePush() {
       // noteTemplate[0].appendChild(clone);
 };
 
+$( document ).ready(function() {
+  for(i = 0; i < parseNotes.length; i++) {
+    $(".note-container").append("<div class=\"row note-wrap\"><div class=\"row note\"><input type=\"text\" class=\"notes note-text\" maxlength=\"59\" placeholder=\"" + parseNotes[i] + "\"></input></div></div>");
+  };
+});
 // <button onclick="useIt()">Use me</button>
 // <div id="container"></div>
 // <script>
