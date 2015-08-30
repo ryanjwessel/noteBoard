@@ -21,8 +21,8 @@ $(".note-enter").click(function() {
 
     //Loop through the parseNotes array to display the notes below the note submission
     for (var i = 0; i < parseNotes.length; i++) {
-      var note = parseNotes[i];
-      var tmpl = document.getElementById('note-display').content.cloneNode(true);
+      var noteText = parseNotes[i];
+      var tmpl = document.getElementById('#note-display').content.cloneNode(true);
       tmpl.querySelector('.noteDisplay').innerText = parseNotes.text;
       parseNotes.appendChild(tmpl);
     }
