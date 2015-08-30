@@ -34,22 +34,40 @@
             </div>
           </div>
 
-          <!-- <div class="row note-priority">
-            <div class="col-sm-4 text-center note-high priority">
-              <button class="btn-block np np-high">HIGH</button>
-            </div>
-            <div class="col-sm-4 text-center note-med priority">
-              <button class="btn-block np np-med">MEDIUM</button>
-            </div>
-            <div class="col-sm-4 text-center note-low priority">
-              <button class="btn-block np np-low">LOW</button>
-            </div>
-          </div> -->
-
       </div>
 
     </div>
 
+  <template id="note-display">
+    <div class="row note-wrap">
+
+        <div class="row note">
+          <div class="col-xs-10 col-sm-11">
+            <form class="note-submit">
+              <input type="text" class="noteDisplay" placeholder="Type to compose a note, click the arrow to submit." maxlength="59"></input>
+          </div>
+          <div class="col-xs-2 col-sm-1 text-right">
+              <button class="note-enter"><img src="icon/delete.png"></button>
+            </form>
+          </div>
+        </div>
+
+    </div>
+  </template>
+
+  <template id="note-priority">
+    <div class="row note-priority">
+      <div class="col-sm-4 text-center note-high priority">
+        <button class="btn-block np np-high">HIGH</button>
+      </div>
+      <div class="col-sm-4 text-center note-med priority">
+        <button class="btn-block np np-med">MEDIUM</button>
+      </div>
+      <div class="col-sm-4 text-center note-low priority">
+        <button class="btn-block np np-low">LOW</button>
+      </div>
+    </div>
+  </template>
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

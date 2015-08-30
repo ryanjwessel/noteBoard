@@ -1,32 +1,29 @@
 // BEGIN CUSTOM JAVASCRIPT/jQuery HERE
 
-// function notePush() {
-//   event.preventDefault();
-//
-//   // Set empty notes array
-//   var notes = [];
-//   // Get value from text input
-//   var note = document.getElementById('note-content').value;
-//   // Push most recent note into notes array
-//   notes.push(note);
-//   // Submit note to LocalStorage
-//   localStorage.setItem('notes', JSON.stringify(notes));
-//
-// };
 $(".note-enter").click(function() {
     //Get value from text input
     var note = JSON.stringify({ text : $("#note-content").val() }),
 
-    //Parse the notes, create an array so I can create multiple notes
     notes = localStorage.getItem('note');
 
     notes = notes ? JSON.parse(notes) : [];
 
+    //Push note(s) into notes array
     notes.push(note);
 
+    //Stringify the notes
     localStorage.setItem("note", JSON.stringify(notes));
     console.log("The data was saved.");
 
-    var parse = JSON.parse(localStorage.getItem('note'));
-    console.log(parse);
+    //Parse the notes to create an array
+    var parseNotes = JSON.parse(localStorage.getItem('note'));
+    console.log(parseNotes);
+
+    //Loop through the parseNotes array to display the notes below the note submission
+    for (var i = 0; i < parseNotes.length; i++) {
+      var note = parseNotes[i];
+      var tmpl = document.getElementById('note-display').content.cloneNode(true);
+      tmpl.querySelector('.noteDisplay').innerText = parseNotes.text;
+      parseNotes.appendChild(tmpl);
+    }
 });
