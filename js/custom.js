@@ -22,14 +22,36 @@ $(".note-enter").click(function() {
     //Loop through the parseNotes array to display the notes below the note submission
     for (var i = 0; i < parseNotes.length; i++) {
       var noteText = parseNotes[i].text;
-      var tmpl = document.querySelector('#note-display');
+      var tmpl = document.querySelector('#note-display').content;
       var noteContent = tmpl.querySelector('.noteDisplay');
-      noteContent[i].textContent = noteText;
-      var noteTemplate = document.querySelector('#note-show');
-      var clone = document.importNode(tmpl.content, true);
-      noteTemplate[0].appendChild(clone);
+      noteContent.textContent = noteText;
+      document.querySelecter('.container-fluid').appendChild(
+        document.importNode(tmpl, true)
+      );
+
+      // var noteTemplate = document.querySelector('#note-show');
+      // var clone = document.importNode(tmpl.content, true);
+      // noteTemplate[0].appendChild(clone);
     }
 });
+
+// <button onclick="useIt()">Use me</button>
+// <div id="container"></div>
+// <script>
+//   function useIt() {
+//     var content = document.querySelector('template').content;
+//     // Update something in the template DOM.
+//     var span = content.querySelector('span');
+//     span.textContent = parseInt(span.textContent) + 1;
+//     document.querySelector('#container').appendChild(
+//         document.importNode(content, true));
+//   }
+// </script>
+//
+// <template>
+//   <div>Template used: <span>0</span></div>
+//   <script>alert('Thanks!')</script>
+// </template>
 
 //   <tbody>
 //     <!-- existing data could optionally be included here -->
