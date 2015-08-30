@@ -22,10 +22,10 @@ $(".note-enter").click(function() {
     //Loop through the parseNotes array to display the notes below the note submission
     for (var i = 0; i < parseNotes.length; i++) {
       var noteText = parseNotes[i].text;
-      var tmpl = document.querySelector('#note-display').content;
-      var noteContent = tmpl.querySelector('.noteDisplay');
+      var tmpl = $('#note-display').content;
+      var noteContent = $('.noteDisplay');
       noteContent.textContent = noteText;
-      document.querySelecter('.container-fluid').append(
+      $('.container-fluid').append(
         document.importNode(tmpl, true)
       );
 
