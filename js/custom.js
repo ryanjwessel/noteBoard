@@ -1,7 +1,6 @@
 // BEGIN CUSTOM JAVASCRIPT/jQuery HERE
 
-function notePush(event) {
-  event.preventDefault;
+function notePush() {
     //Get value from text input
     var note = JSON.stringify({ text : $("#note-content").val() }),
 
