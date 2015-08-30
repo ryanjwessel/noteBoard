@@ -33,7 +33,7 @@ function notePush() {
       // noteTemplate[0].appendChild(clone);
 };
 
-$( document ).ready(function() {
+$( document ).ready(function(parseNotes) {
   for(i = 0; i < parseNotes.length; i++) {
     $(".note-container").append("<div class=\"row note-wrap\"><div class=\"row note\"><input type=\"text\" class=\"notes note-text\" maxlength=\"59\" placeholder=\"" + parseNotes[i] + "\"></input></div></div>");
   };
