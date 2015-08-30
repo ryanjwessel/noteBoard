@@ -19,7 +19,7 @@ function notePush() {
     var parseNotes = JSON.parse(localStorage.getItem('note'));
     console.log(parseNotes);
 
-    $('.note-show').text(localStorage.note);
+    $('.note-show').text(parseNotes);
 
     // //Loop through the parseNotes array to display the notes below the note submission
     //   var noteText = parseNotes.text;
