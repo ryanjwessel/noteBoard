@@ -17,14 +17,14 @@ $(".note-enter").click(function() {
 
     //Parse the notes to create an array
     var parseNotes = JSON.parse(localStorage.getItem('note'));
-    console.log(parseNotes);
+    console.log(parseNotes.text);
 
     //Loop through the parseNotes array to display the notes below the note submission
     for (var i = 0; i < parseNotes.length; i++) {
-      var noteText = parseNotes[i];
+      var noteText = parseNotes[i].text;
       var tmpl = document.querySelector('#note-display');
       var noteContent = tmpl.querySelector('.noteDisplay');
-      noteContent[i].textContent = noteText.text;
+      noteContent[i].textContent = noteText;
       var noteTemplate = document.querySelector('#note-show');
       var clone = document.importNode(tmpl.content, true);
       noteTemplate[0].appendChild(clone);
