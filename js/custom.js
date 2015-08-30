@@ -19,20 +19,20 @@ $(".note-enter").click(function() {
     var parseNotes = JSON.parse(localStorage.getItem('note'));
     console.log(parseNotes.text);
 
-    //Loop through the parseNotes array to display the notes below the note submission
-    // for (var i = 0; i < parseNotes.length; i++) {
-      var noteText = parseNotes.text;
-      var tmpl = $('#note-display').content;
-      var noteContent = $('.noteDisplay');
-      noteContent.textContent = noteText;
-      $('.notes-container').append(
-        document.importNode(tmpl, true)
-      );
+    $('.notes-container').html(localStorage.note);
+
+    // //Loop through the parseNotes array to display the notes below the note submission
+    //   var noteText = parseNotes.text;
+    //   var tmpl = $('#note-display').content;
+    //   var noteContent = $('span');
+    //   noteContent.textContent = noteText;
+    //   $('.notes-container').append(
+    //     document.importNode(tmpl, true)
+    //   );
 
       // var noteTemplate = document.querySelector('#note-show');
       // var clone = document.importNode(tmpl.content, true);
       // noteTemplate[0].appendChild(clone);
-    // }
 });
 
 // <button onclick="useIt()">Use me</button>
