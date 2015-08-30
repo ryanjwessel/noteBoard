@@ -2,7 +2,7 @@
 
 function notePush() {
     //Get value from text input
-    var note = JSON.stringify({ text : $("#note-content").val() }),
+    var note = JSON.stringify($("#note-content").val()),
 
     notes = localStorage.getItem('note');
 
