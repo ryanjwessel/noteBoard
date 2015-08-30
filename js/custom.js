@@ -25,7 +25,7 @@ $(".note-enter").click(function() {
       var tmpl = document.querySelector('#note-display').content;
       var noteContent = tmpl.querySelector('.noteDisplay');
       noteContent.textContent = noteText;
-      document.querySelecter('.container-fluid').appendChild(
+      document.querySelecter('.container-fluid').append(
         document.importNode(tmpl, true)
       );
 
