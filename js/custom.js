@@ -26,4 +26,4 @@ function notePush() {
 };
 
 
-$( document ).ready(function(parseNotes) {}
+// $( document ).ready(function(parseNotes) {};
