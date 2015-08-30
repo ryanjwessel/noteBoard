@@ -20,7 +20,7 @@ function notePush() {
     console.log(parseNotes);
 
     // $('.note-show').text(parseNotes);
-    $(".note-show").append("<div class=\"row note-wrap\"><div class=\"row note\"><input type=\"text\" class=\"notes note-text\" maxlength=\"59\" placeholder=\"" + parseNotes + "\"></input></div></div>");
+    $(".note-container").append("<div class=\"row note-wrap\"><div class=\"row note\"><input type=\"text\" class=\"notes note-text\" maxlength=\"59\" placeholder=\"" + parseNotes + "\"></input></div></div>");
 
     // //Loop through the parseNotes array to display the notes below the note submission
     //   var noteText = parseNotes.text;
