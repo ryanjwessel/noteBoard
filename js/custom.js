@@ -18,9 +18,9 @@ $(".note-enter").click(function(event) {
 
     //Parse the notes to create an array
     var parseNotes = JSON.parse(localStorage.getItem('note'));
-    console.log(parseNotes.text);
+    var notesText = parseNotes.text;
 
-    $('.note-show').html(parseNotes.text);
+    $('.note-show').html(notesText);
 
     // //Loop through the parseNotes array to display the notes below the note submission
     //   var noteText = parseNotes.text;
