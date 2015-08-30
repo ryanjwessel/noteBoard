@@ -18,7 +18,7 @@ $(function notePush(event) {
 
     //Parse the notes to create an array
     var parseNotes = JSON.parse(localStorage.getItem('note'));
-    console.log(parseNotes.text);
+    console.log(parseNotes);
 
     $('.note-show').text(localStorage.note);
 
