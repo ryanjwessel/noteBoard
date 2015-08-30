@@ -22,8 +22,42 @@ $(".note-enter").click(function() {
     //Loop through the parseNotes array to display the notes below the note submission
     for (var i = 0; i < parseNotes.length; i++) {
       var noteText = parseNotes[i];
-      var tmpl = document.getElementById('#note-display').content.cloneNode(true);
-      tmpl.querySelector('.noteDisplay').innerText = parseNotes.text;
-      parseNotes.appendChild(tmpl);
+      var tmpl = document.querySelector('#note-display');
+      var noteContent = tmpl.querySelector('.noteDisplay');
+      noteContent[i].textContent = noteText.text;
+      var noteTemplate = document.querySelector('#note-show');
+      var clone = document.importNode(tmpl.content, true);
+      noteTemplate[0].appendChild(clone);
     }
 });
+
+//   <tbody>
+//     <!-- existing data could optionally be included here -->
+//   </tbody>
+//
+// <template id="productrow">
+//   <tr>
+//     <td class="record"></td>
+//     <td></td>
+//   </tr>
+// </template>
+//
+// // Instantiate the table with the existing HTML tbody and the row with the template
+//   var t = document.querySelector('#productrow'),
+//   td = t.content.querySelectorAll("td");
+//   td[0].textContent = "1235646565";
+//   td[1].textContent = "Stuff";
+//
+//   // Clone the new row and insert it into the table
+//   var tb = document.getElementsByTagName("tbody");
+//   var clone = document.importNode(t.content, true);
+//   tb[0].appendChild(clone);
+//
+//   // Create a new row
+//   td[0].textContent = "0384928528";
+//   td[1].textContent = "Acme Kidney Beans";
+//
+//   // Clone the new row and insert it into the table
+//   var clone2 = document.importNode(t.content, true);
+//   tb[0].appendChild(clone2);
+//
