@@ -1,6 +1,6 @@
 // BEGIN CUSTOM JAVASCRIPT/jQuery HERE
 
-$(function notePush(event) {
+function notePush(event) {
   event.preventDefault;
     //Get value from text input
     var note = JSON.stringify({ text : $("#note-content").val() }),
@@ -34,7 +34,7 @@ $(function notePush(event) {
       // var noteTemplate = document.querySelector('#note-show');
       // var clone = document.importNode(tmpl.content, true);
       // noteTemplate[0].appendChild(clone);
-});
+};
 
 // <button onclick="useIt()">Use me</button>
 // <div id="container"></div>
