@@ -88,6 +88,10 @@ input#note-content {
   background-color: #FBC02D;
   color: white;
 }
+.noteEdit {
+  width: 90%;
+  border: none;
+}
 .note-time {
   margin: 0px;
 }
