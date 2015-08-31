@@ -97,6 +97,9 @@ input#note-content {
   width: 90%;
   border: none;
 }
+.editForm {
+  padding-bottom: 7px;
+}
 .note-time {
   margin: 0px;
 }
