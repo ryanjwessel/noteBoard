@@ -13,6 +13,10 @@ body {
   font-family: penmanship;
   src: url("font/KGPrimaryPenmanshipLined.ttf")
 }
+@font-face {
+  font-family: penmanship;
+  src: url("font/KGPrimaryPenmanshipLined.eot")
+}
 h1 {
   font-family: penmanship;
 }
