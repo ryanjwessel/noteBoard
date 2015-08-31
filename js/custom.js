@@ -58,7 +58,18 @@ $(document).on("click", ".note-parent p input.note-delete", function() {
 });
 
 // Edit a note
-$(document).on("click", ".note-parent p input.note-edit", function noteEdit() {
+$(document).on("click", ".note-parent p input.note-edit", function() {
+
+  var thisID = $(this).parent().attr("id"); // this is task-0
+
+  $(this).parent().html('<form class="editForm"><input class="noteEdit noteEdit' + thisID + '" value="'+localStorage.getItem(thisID)+'" maxlength="59"></form>')
+    .submit(function() {
+      localStorage.setItem(thisID, $(".noteEdit" + thisID ).val());
+      $(this).html('<input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+' value="E"></input>'+localStorage.getItem(thisID));
+      return false;
+    });
+});
+$(document).on("click", ".note-parent p span.note-content-text", function() {
 
   var thisID = $(this).parent().attr("id"); // this is task-0
 
