@@ -33,7 +33,7 @@ body {
 }
 input#note-content {
   background-color: #EDE7F6;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #B39DDB;
 }
 .note-wrap {
   background-color: white;
@@ -54,7 +54,11 @@ input#note-content {
 .note-enter {
   margin: 17.5px 0px;
   border: none;
-  background-color: transparent;
+  background-color: #F9A825;
+  color: white;
+}
+.note-enter:hover {
+  background-color: #F57F17;
 }
 .note-enter > img {
   height: 18px;
