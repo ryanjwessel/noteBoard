@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
   //Loop through notes and display in rows
   for(i = 0; i < localStorage.length; i++) {
-    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text" id="notes-'+i+'">'+localStorage.getItem("notes-"+i)+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete btn" id="note-delete-'+i+'" onclick="noteDelete();" value="X"></input></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text" id="notes-'+i+'">'+localStorage.getItem("notes-"+i)+'</p><input type="button" class="note-delete btn" id="note-delete-'+i+'" onclick="noteDelete();" value="X"></input></div></div></div>');
   };
 });
 
@@ -21,7 +21,7 @@ function notePush() {
     localStorage.setItem( "notes-" + i, $("#note-content").val());
 
     //Append row with note contents to note-container
-    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text" id="notes-'+i+'">'+localStorage.getItem("notes-"+i)+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete btn" id="note-delete-'+i+'" onclick="noteDelete();" value="X"></input></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text" id="notes-'+i+'">'+localStorage.getItem("notes-"+i)+'</p><input type="button" class="note-delete btn" id="note-delete-'+i+'" onclick="noteDelete();" value="X"></input></div></div></div>');
 
     //Add animation effect when submitting new task
     $("#note-wrap-" + i).css('display', 'none');
