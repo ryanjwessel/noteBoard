@@ -65,13 +65,17 @@ input#note-content {
   background-color: #8BC34A;
   color: white;
 }
+.note-enter:visited, .note-enter:hover, .note-enter:active {
+  background-color: #689F38;
+  color: white;
+}
 .note-edit-enter {
   border: none;
   background-color: #8BC34A;
   color: white;
   margin-right: 59.5625px;
 }
-.note-enter:visited, .note-enter:hover, .note-delete:active {
+.note-edit-enter:visited, .note-edit-enter:hover, .note-edit-enter:active {
   background-color: #689F38;
   color: white;
 }
