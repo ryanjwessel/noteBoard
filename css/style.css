@@ -61,7 +61,7 @@ input#note-content {
   background-color: transparent;
 }
 .note-enter {
-  margin: 20.5px 59.5px 20.5px 5px;
+  margin: 20.5px 20px 20.5px 44.6px;
   border: none;
   background-color: #8BC34A;
   color: white;
@@ -74,7 +74,7 @@ input#note-content {
   border: none;
   background-color: #8BC34A;
   color: white;
-  margin-right: 59.5625px;
+  margin: 0px 20px 0px 39.6px;
 }
 .note-edit-enter:visited, .note-edit-enter:hover, .note-edit-enter:active {
   background-color: #689F38;
