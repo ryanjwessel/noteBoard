@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
   //Loop through notes and display in rows
   for(i = 0; i < localStorage.length; i++) {
-    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10 note-parent"><p class="notes note-text" id="notes-'+i+'">'+localStorage.getItem("notes-"+i)+'<input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input></p></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10 note-parent"><p class="notes note-text" id="notes-'+i+'"><input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input>'+localStorage.getItem("notes-"+i)+'</p></div></div></div>');
   };
 });
 
@@ -21,7 +21,7 @@ function notePush() {
     localStorage.setItem( "notes-" + i, $("#note-content").val());
 
     //Append row with note contents to note-container
-    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10 note-parent"><p class="notes note-text" id="notes-'+i+'">'+localStorage.getItem("notes-"+i)+'<input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input></p></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10 note-parent"><p class="notes note-text" id="notes-'+i+'"><input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input>'+localStorage.getItem("notes-"+i)+'</p></div></div></div>');
 
     //Add animation effect when submitting new task
     $("#note-wrap-" + i).css('display', 'none');
@@ -50,4 +50,18 @@ $(document).on("click", ".note-parent p input.note-delete", function() {
       localStorage.removeItem("notes-"+ (i + 1) );  // Removes the id 1 up from the deleted item
     }
   }
+});
+
+// Edit a note
+$(document).on("click", "#tasks li a.edit", function() {
+
+  var thisID = $(this).parent().attr("id");
+
+  $(this).parent().html("<form><input class='taskEdit" + thisID + "' autofocus><input type='submit'></form>")
+  .submit(function() {
+     localStorage.removeItem("task-" + thisID);
+     localStorage.setItem("task-" + thisID, $(".taskEdit" + thisID ).val());
+     $(this).html(localStorage.getItem("task-" + thisID) + menuButtons);
+     return false;
+  });
 });
