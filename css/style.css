@@ -22,7 +22,7 @@ h1 {
 }
 /*NAVIGATION*/
 .nav {
-  background-color: #673AB7;
+  background-color: #4CAF50;
   height: 60px;
   position: relative;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.35);
@@ -31,8 +31,8 @@ h1 {
 }
 .zenbook > h1 {
   color: #f5f5f5;
-  font-size: 24px;
-  margin: 17px 0px;
+  font-size: 40px;
+  margin: 8px 0px;
 }
 .note-compose {
   border: none;
@@ -43,15 +43,15 @@ h1 {
 
 /*NOTES*/
 .note-submit-wrap {
-  background-color: #D1C4E9;
+  background-color: #C8E6C9;
   overflow: scroll;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.35);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.35);
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.35);
 }
 input#note-content {
-  background-color: #EDE7F6;
-  border-bottom: 1px solid #B39DDB;
+  background-color: #E8F5E9;
+  border-bottom: 1px solid #A5D6A7;
   width: 100%;
 }
 .note-wrap {
@@ -64,7 +64,7 @@ input#note-content {
   margin: 22px 0px;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #C8E6C9;
 }
 .note-submit {
   border: none;
@@ -82,7 +82,7 @@ input#note-content {
 }
 .note-edit {
   background-color: #FFEB3B;
-  color: white;
+  color: #616161;
   border: none;
   margin-right: 20px;
 }
