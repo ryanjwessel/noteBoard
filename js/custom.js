@@ -30,7 +30,7 @@ function notePush() {
 
     //Parse the notes to create an array
     var parseNotes = JSON.parse(localStorage.getItem('note'));
-    var i = parseNotes.length;
+    var i = parseNotes.length - 1;
     console.log(i);
 
     //Append the notes in rows
