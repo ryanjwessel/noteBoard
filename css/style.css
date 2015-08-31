@@ -65,7 +65,7 @@ input#note-content {
   background-color: #8BC34A;
   color: white;
 }
-.note-enter:hover {
+.note-enter:hover, .note-enter:active {
   background-color: #689F38;
   color: white;
 }
@@ -75,7 +75,7 @@ input#note-content {
   color: white;
   border: none;
 }
-.note-delete:hover {
+.note-delete:hover, .note-delete:active {
   background-color: #D32F2F;
   color: white;
 }
