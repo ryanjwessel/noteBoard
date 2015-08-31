@@ -60,26 +60,6 @@ input#note-content {
   border: none;
   background-color: transparent;
 }
-.note-enter {
-  margin: 20.5px 20px 20.5px 5px;
-  border: none;
-  background-color: #8BC34A;
-  color: white;
-}/*margin-left was 44.6px for desktop*/
-.note-enter:visited, .note-enter:hover, .note-enter:active {
-  background-color: #689F38;
-  color: white;
-}
-.note-edit-enter {
-  border: none;
-  background-color: #8BC34A;
-  color: white;
-  margin: 0px 20px 0px 39.6px;
-}
-.note-edit-enter:visited, .note-edit-enter:hover, .note-edit-enter:active {
-  background-color: #689F38;
-  color: white;
-}
 .note-delete {
   background-color: #F44336;
   color: white;
@@ -93,6 +73,7 @@ input#note-content {
 .note-edit {
   background-color: #FFEB3B;
   color: white;
+  border: none;
   margin-right: 20px;
 }
 .note-edit:visited, .note-edit:hover, .note-edit:active {
