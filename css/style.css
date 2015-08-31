@@ -107,12 +107,14 @@ input#note-content {
 .editForm {
   padding-bottom: 2px;
 }
-.note-time {
-  margin: 0px;
+span.note-content-text {
+  word-break: break-word;
 }
 .note-priority {
   margin: 0px;
 }
+
+/* ALL STYLING FOR POTENTIAL PRIORITY FEATURE **************
 .priority {
   color: #424242;
   padding: 0px;
@@ -142,4 +144,4 @@ input#note-content {
 .np-low:hover {
   background-color: #388E3C;
   color: #f5f5f5;
-}
+} *****************************************************/
