@@ -1,5 +1,6 @@
 // BEGIN CUSTOM JAVASCRIPT/jQuery HERE
 
+var noteGlobal = [];
 function notePush() {
     //Get value from text input
     var note = JSON.stringify($("#note-content").val()),
@@ -17,7 +18,8 @@ function notePush() {
 
     //Parse the notes to create an array
     var parseNotes = JSON.parse(localStorage.getItem('note'));
-    console.log(parseNotes);
+    noteGlobal = parseNotes;
+    console.log(noteGlobal);
 
     $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-12 col-sm-12"><p class="notes note-text">'+note+'</p></div></div></div>');
 
