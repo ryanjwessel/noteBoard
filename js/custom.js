@@ -39,6 +39,7 @@ $('.notePush').submit(function() {
 
 // Remove a note
 $(document).on("click", ".note-parent p input.note-delete", function() {
+  confirm("Are you sure you want to delte this note?");
   localStorage.removeItem($(this).parent().attr("id"));
   $(this).parent().slideUp('slow', function() {
     $(this).remove();
@@ -57,7 +58,7 @@ $(document).on("click", ".note-parent p input.note-edit", function() {
 
   var thisID = $(this).parent().attr("id"); // this is task-0
 
-  $(this).parent().html('<form class="editForm"><input class="noteEdit noteEdit' + thisID + '" placeholder="Make your changes here." maxlength="59"></form>')
+  $(this).parent().html('<form class="editForm"><input class="noteEdit noteEdit' + thisID + '" placeholder="'+localStorage.getItem(thisID)+'" maxlength="59"></form>')
     .submit(function() {
       localStorage.setItem(thisID, $(".noteEdit" + thisID ).val());
       $(this).html('<input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+' value="E"></input>'+localStorage.getItem(thisID));
