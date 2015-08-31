@@ -41,8 +41,6 @@ function notePush() {
 $(document).on("click", ".note-parent p input.note-delete", function() {
   localStorage.removeItem($(this).parent().attr("id"));
   $(this).parent().slideUp('slow', function() {
-    $(this).parent().css('display', 'none');
-    $(this).parent().css('margin-bottom', '0px');
     $(this).remove();
   });
   // This part resets all the IDs
