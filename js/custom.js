@@ -28,7 +28,7 @@ function notePush() {
 $( document ).ready(function(parseNotes) {
 
   for(i = 0; i < parseNotes.length; i++) {
-    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-12 col-sm-12"><p class="notes note-text'+i+'">'+parseNotes[i]+'</p></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-12 col-sm-12"><p class="notes note-text '+i+'">'+parseNotes[i]+'</p></div></div></div>');
   };
 
 });
