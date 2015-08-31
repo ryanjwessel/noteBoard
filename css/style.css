@@ -46,7 +46,7 @@ input#note-content {
 }
 .note-wrap {
   background-color: white;
-  border-bottom: 10px solid gray;
+  border-bottom: 10px solid #eee;
 }
 .note-text {
   padding: 5px;
@@ -54,7 +54,7 @@ input#note-content {
   margin: 22px 0px;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
 }
 .note-submit {
   border: none;
