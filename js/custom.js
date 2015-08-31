@@ -27,10 +27,12 @@ function notePush() {
 };
 
 
-$( document ).ready(function(noteGlobal) {
+$( document ).ready(function() {
 
-  for(i = 0; i < noteGlobal.length; i++) {
-    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-12 col-sm-12"><p class="notes note-text '+i+'">'+noteGlobal[i]+'</p></div></div></div>');
+  var noteStart = JSON.parse(localStorage.getItem('note'));
+
+  for(i = 0; i < noteStart.length; i++) {
+    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-12 col-sm-12"><p class="notes note-text '+i+'">'+noteStart[i]+'</p></div></div></div>');
   };
 
 });
