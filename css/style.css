@@ -28,6 +28,9 @@ body {
 }
 
 /*NOTES*/
+.note-submit-wrap {
+  background-color: #D1C4E9;
+}
 .note-wrap {
   background-color: white;
   margin-top: 10px;
