@@ -54,7 +54,7 @@ input#note-content {
   margin: 22px 0px;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 .note-submit {
   border: none;
@@ -97,7 +97,7 @@ span.note-content-text {
   margin: 0px;
 }
 
-@media (min-width: @screen-sm-min) {
+@media screen and (min-width: 768px) {
   span.note-content-text {
     width: 87%
   }
