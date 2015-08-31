@@ -37,7 +37,8 @@ function notePush() {
 
     //Append the notes in rows
     $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes notes-'+i+' note-text">'+note+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete delete note-delete-'+i+' btn" onclick="noteDelete();" value="X"></input></div></div></div>');
-    $()
+    $('.notes-' + i).slideDown();
+
     //Reset input value
     $('#note-content').val("");
 
