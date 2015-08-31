@@ -39,18 +39,22 @@ $('.notePush').submit(function() {
 
 // Remove a note
 $(document).on("click", ".note-parent p input.note-delete", function() {
-  confirm("Are you sure you want to delte this note?");
-  localStorage.removeItem($(this).parent().attr("id"));
-  $(this).parent().slideUp('slow', function() {
-    $(this).remove();
-  });
-  // This part resets all the IDs
-  for( i = 0; i < localStorage.length; i++) {
-    if( !localStorage.getItem("notes-"+ i)) {
-      localStorage.setItem("notes-"+ i, localStorage.getItem('notes-' + (i + 1) )); // Moves the id up a level
-      localStorage.removeItem("notes-"+ (i + 1) );  // Removes the id 1 up from the deleted item
+  var confirmDelete = confirm("Are you sure you want to delete this note?");
+  if(confirmDelete == true) {
+    localStorage.removeItem($(this).parent().attr("id"));
+    $(this).parent().slideUp('slow', function() {
+      $(this).remove();
+    });
+    // This part resets all the IDs
+    for( i = 0; i < localStorage.length; i++) {
+      if( !localStorage.getItem("notes-"+ i)) {
+        localStorage.setItem("notes-"+ i, localStorage.getItem('notes-' + (i + 1) )); // Moves the id up a level
+        localStorage.removeItem("notes-"+ (i + 1) );  // Removes the id 1 up from the deleted item
+      }
     }
-  }
+  } else {
+  };
+
 });
 
 // Edit a note
