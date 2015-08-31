@@ -3,6 +3,7 @@
 //Load the existing notes on start
 $( document ).ready(function() {
 
+  var i = 0;
   //Load notes in localStorage
   var noteStart = JSON.parse(localStorage.getItem('note'));
 
@@ -15,8 +16,6 @@ $( document ).ready(function() {
 
 //Add a new note to the list
 function notePush() {
-
-  var i = 0;
 
   if ( $("#note-content").val() != "" ) {
     localStorage.setItem( "notes-" + i, $("#note-content").val());
