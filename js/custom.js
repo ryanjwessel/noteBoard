@@ -53,15 +53,16 @@ $(document).on("click", ".note-parent p input.note-delete", function() {
 });
 
 // Edit a note
-$(document).on("click", "#tasks li a.edit", function() {
+$(document).on("click", ".note-parent p input.note-edit", function() {
 
-  var thisID = $(this).parent().attr("id");
+  var thisID = $(this).parent().attr("id"); // this is task-0
 
-  $(this).parent().html("<form><input class='taskEdit" + thisID + "' autofocus><input type='submit'></form>")
-  .submit(function() {
-     localStorage.removeItem("task-" + thisID);
-     localStorage.setItem("task-" + thisID, $(".taskEdit" + thisID ).val());
-     $(this).html(localStorage.getItem("task-" + thisID) + menuButtons);
-     return false;
-  });
+  $(this).parent().html("<form><input class='noteEdit" + thisID + "' autofocus><input type='submit'></form>")
+    .submit(function() {
+      //localStorage.removeItem("task-" + thisID); // it becomes task-task-0
+      //localStorage.setItem("task-" + thisID, $(".taskEdit" + thisID ).val());
+      localStorage.setItem(thisID, $(".noteEdit" + thisID ).val());
+      $(this).html(localStorage.getItem(thisID) + menuButtons);
+      return false;
+    });
 });
