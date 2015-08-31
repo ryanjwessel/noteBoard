@@ -41,7 +41,8 @@ body {
 }
 input#note-content {
   background-color: #EDE7F6;
-    border-bottom: 1px solid #B39DDB;
+  border-bottom: 1px solid #B39DDB;
+  width: 90%;
 }
 .note-wrap {
   background-color: white;
@@ -60,7 +61,7 @@ input#note-content {
   background-color: transparent;
 }
 .note-enter {
-  margin: 20.5px 0px;
+  margin: 20.5px 59.5px 20.5px 5px;
   border: none;
   background-color: #8BC34A;
   color: white;
