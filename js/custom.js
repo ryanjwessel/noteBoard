@@ -1,7 +1,7 @@
 // BEGIN CUSTOM JAVASCRIPT/jQuery HERE
 
 //Load the existing notes on start
-$( document ).ready(function() {
+$(document).ready(function() {
 
   var i = 0;
 
@@ -12,7 +12,7 @@ $( document ).ready(function() {
 });
 
 //Add a new note to the list
-function notePush() {
+$('.notePush').submit(function() {
 
   var i = localStorage.length;
 
@@ -35,7 +35,7 @@ function notePush() {
   }
   return false;
 
-};
+});
 
 // Remove a note
 $(document).on("click", ".note-parent p input.note-delete", function() {
