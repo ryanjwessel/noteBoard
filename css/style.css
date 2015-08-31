@@ -69,6 +69,7 @@ input#note-content {
   border: none;
   background-color: #8BC34A;
   color: white;
+  margin-right: 59.5625px;
 }
 .note-enter:visited, .note-enter:hover, .note-delete:active {
   background-color: #689F38;
