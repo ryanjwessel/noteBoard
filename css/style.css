@@ -65,6 +65,11 @@ input#note-content {
   background-color: #8BC34A;
   color: white;
 }
+.note-edit-enter {
+  border: none;
+  background-color: #8BC34A;
+  color: white;
+}
 .note-enter:visited, .note-enter:hover, .note-delete:active {
   background-color: #689F38;
   color: white;

@@ -57,7 +57,7 @@ $(document).on("click", ".note-parent p input.note-edit", function() {
 
   var thisID = $(this).parent().attr("id"); // this is task-0
 
-  $(this).parent().html('<form><input class="noteEdit noteEdit' + thisID + '" autofocus placeholder="Type to submit your note edit."><input type="submit" class="note-enter"></form>')
+  $(this).parent().html('<form><input class="noteEdit noteEdit' + thisID + '" autofocus placeholder="Type to submit your note edit."><input type="submit" class="note-edit-enter" value=">"></form>')
     .submit(function() {
       localStorage.setItem(thisID, $(".noteEdit" + thisID ).val());
       $(this).html('<input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+' value="E"></input>'+localStorage.getItem(thisID));
