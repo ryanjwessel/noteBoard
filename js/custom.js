@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   //Loop through notes and display in rows
   for(i = 0; i < localStorage.length; i++) {
-    $(".note-container").prepend('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-12 col-md-10 col-md-offset-1 note-parent"><span class="note-content-text">'+localStorage.getItem("notes-"+i)+'</span></p></div></div></div>');
+    $(".note-container").prepend('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-12 col-md-10 col-md-offset-1 note-parent"><p class="notes note-text" id="notes-'+i+'"><input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+'" value="E"></input><span class="note-content-text">'+localStorage.getItem("notes-"+i)+'</span></p></div></div></div>');
   };
 });
 
