@@ -91,7 +91,7 @@ input#note-content {
 span.note-content-text {
   word-break: break-word;
   display: inline-block;
-  width: 269px;
+  width: 74%;
 }
 .note-priority {
   margin: 0px;
@@ -99,7 +99,7 @@ span.note-content-text {
 
 @media (min-width: @screen-sm-min) {
   span.note-content-text {
-    display: inline;
+    width: 87%
   }
 }
 
