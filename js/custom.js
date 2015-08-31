@@ -59,10 +59,8 @@ $(document).on("click", ".note-parent p input.note-edit", function() {
 
   $(this).parent().html("<form><input class='noteEdit" + thisID + "' autofocus><input type='submit'></form>")
     .submit(function() {
-      //localStorage.removeItem("task-" + thisID); // it becomes task-task-0
-      //localStorage.setItem("task-" + thisID, $(".taskEdit" + thisID ).val());
       localStorage.setItem(thisID, $(".noteEdit" + thisID ).val());
-      $(this).html(localStorage.getItem(thisID) + menuButtons);
+      $(this).html(localStorage.getItem(thisID));
       return false;
     });
 });
