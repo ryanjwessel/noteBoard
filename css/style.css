@@ -32,7 +32,7 @@ h1 {
 .zenbook > h1 {
   color: #f5f5f5;
   font-size: 40px;
-  margin: 8px 0px;
+  margin: 12px 0px 4px 0px;
 }
 .note-compose {
   border: none;
