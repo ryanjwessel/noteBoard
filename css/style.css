@@ -31,9 +31,13 @@ body {
 .note-submit-wrap {
   background-color: #D1C4E9;
 }
+input#note-content {
+  background-color: #EDE7F6;
+    border-bottom: 1px solid white;
+}
 .note-wrap {
   background-color: white;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .note-text {
   padding: 5px;
