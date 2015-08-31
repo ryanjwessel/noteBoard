@@ -15,43 +15,26 @@ $( document ).ready(function() {
 function notePush() {
 
   var i = localStorage.length;
-  
+
   if ( $("#note-content").val() != "" ) {
+    //Push note into localStorage
     localStorage.setItem( "notes-" + i, $("#note-content").val());
+
+    //Append row with note contents to note-container
     $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text" id="notes-'+i+'">'+localStorage.getItem("notes-"+i)+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete btn" id="note-delete-'+i+'" onclick="noteDelete();" value="X"></input></div></div></div>');
+
+    //Add animation effect when submitting new task
     $(".note-wrap-" + i).css('display', 'none');
     $(".note-wrap-" + i).slideDown('slow');
+
+    //Reset input value
     $("#note-content").val("");
+
+    //Add to localStorage count
     i++;
   }
-    // //Get value from text input
-    // var note = JSON.stringify($("#note-content").val()),
-    //
-    // notes = localStorage.getItem('note');
-    //
-    // notes = notes ? JSON.parse(notes) : [];
-    //
-    // //Push note(s) into notes array
-    // notes.push(note);
-    //
-    // //Stringify the notes
-    // localStorage.setItem("note", JSON.stringify(notes));
-    // console.log("The data was saved.");
-    //
-    // //Parse the notes to create an array
-    // var parseNotes = JSON.parse(localStorage.getItem('note'));
-    // var i = parseNotes.length - 1;
-    // console.log(i);
-    //
-    // //Append the notes in rows
-    // $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text" id="notes-'+i+'">'+note+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete btn" id="note-delete-'+i+'" onclick="noteDelete();" value="X"></input></div></div></div>');
-    // $('.note-wrap-' + i).css('display', 'none');
-    // $('.note-wrap-' + i).slideDown('slow');
-    //
-    // //Reset input value
-    // $('#note-content').val("");
-    //
-    // i++;
+  return false;
+
 };
 
 // Remove a note
