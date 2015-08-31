@@ -90,9 +90,17 @@ input#note-content {
 }
 span.note-content-text {
   word-break: break-word;
+  display: inline-block;
+  width: 269px;
 }
 .note-priority {
   margin: 0px;
+}
+
+@media (min-width: @screen-sm-min) {
+  span.note-content-text {
+    display: inline;
+  }
 }
 
 /* ALL STYLING FOR POTENTIAL PRIORITY FEATURE **************
