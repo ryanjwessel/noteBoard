@@ -23,7 +23,7 @@ function notePush() {
     $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-12 col-sm-12"><p class="notes note-text">'+note+'</p></div></div></div>');
 
     //Reset input value
-    $('note-content').value = "";
+    $('#note-content').value = "";
 };
 
 
