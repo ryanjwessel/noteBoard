@@ -30,8 +30,8 @@ function notePush() {
 
     //Parse the notes to create an array
     var parseNotes = JSON.parse(localStorage.getItem('note'));
-    console.log(parseNotes.length);
     var i = parseNotes.length;
+    console.log(i);
 
     //Append the notes in rows
     $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text">'+note+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete delete note-delete-'+i+' btn" onclick="noteDelete();" value="X"></input></div></div></div>');
