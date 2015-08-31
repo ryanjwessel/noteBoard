@@ -9,7 +9,13 @@ body {
 .row {
   margin: 0px;
 }
-
+@font-face {
+  font-family: penmanship;
+  src: url("font/KGPrimaryPenmanship.ttf")
+}
+h1 {
+  font-family: penmanship;
+}
 /*NAVIGATION*/
 .nav {
   background-color: #673AB7;
