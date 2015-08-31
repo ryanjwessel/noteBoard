@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   //Loop through notes and display in rows
   for(i = 0; i < localStorage.length; i++) {
-    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10 note-parent"><p class="notes note-text" id="notes-'+i+'"><input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+'" value="E"></input><span class="note-content-text">'+localStorage.getItem("notes-"+i)+'</span></p></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-12 col-md-10 col-md-offset-1 note-parent"><p class="notes note-text" id="notes-'+i+'"><input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+'" value="E"></input><span class="note-content-text">'+localStorage.getItem("notes-"+i)+'</span></p></div></div></div>');
   };
 });
 
@@ -21,7 +21,7 @@ $('.notePush').submit(function() {
     localStorage.setItem( "notes-" + i, $("#note-content").val());
 
     //Append row with note contents to note-container
-    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10 note-parent"><p class="notes note-text" id="notes-'+i+'"><input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+'" value="E"></input><span class="note-content-text">'+localStorage.getItem("notes-"+i)+'</span></p></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap" id="note-wrap-'+i+'"><div class="row note"><div class="col-xs-12 col-md-10 col-md-offset-1 note-parent"><p class="notes note-text" id="notes-'+i+'"><input type="button" class="note-delete btn" id="note-delete-'+i+'" value="X"></input><input type="button" class="note-edit btn" id="note-edit-'+i+'" value="E"></input><span class="note-content-text">'+localStorage.getItem("notes-"+i)+'</span></p></div></div></div>');
 
     //Add animation effect when submitting new task
     $("#note-wrap-" + i).css('display', 'none');
