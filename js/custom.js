@@ -20,7 +20,7 @@ function notePush() {
     console.log(parseNotes);
 
     //Append the notes in rows
-    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text">'+note+'</p></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text">'+note+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete btn" onclick="noteDelete();" value="X"></input></div></div></div>');
 
     //Reset input value
     $('#note-content').val("");
@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
   //Loop through notes and display in rows
   for(i = 0; i < noteStart.length; i++) {
-    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text '+i+'">'+noteStart[i]+'</p></div></div></div>');
+    $(".note-container").append('<div class="row note-wrap"><div class="row note"><div class="col-xs-offset-1 col-sm-offset-1 col-xs-9 col-sm-10"><p class="notes note-text '+i+'">'+noteStart[i]+'</p></div><div class="col-xs-2 col-sm-1 text-right"><input type="button" class="note-delete btn" onclick="noteDelete();" value="X"></input></div></div></div>');
   };
 
 });
