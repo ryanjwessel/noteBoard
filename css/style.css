@@ -13,7 +13,7 @@ body {
 /*NAVIGATION*/
 .nav {
   background-color: #673AB7;
-  height: 60px;
+  min-height: 60px;
   position: relative;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.35);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.35);
@@ -21,8 +21,8 @@ body {
 }
 .zenbook > h1 {
   color: #f5f5f5;
-  font-size: 24px;
-  margin: 17px 0px;
+  font-size: 80px;
+  margin: 20px 0px;
 }
 .note-compose {
   border: none;
@@ -42,8 +42,8 @@ body {
 input#note-content {
   background-color: #EDE7F6;
   border-bottom: 1px solid #B39DDB;
-  width: 80%;
-}/*width was 90% for desktop*/
+  width: 100%;
+}
 .note-wrap {
   background-color: white;
   margin-bottom: 10px;
@@ -100,8 +100,9 @@ input#note-content {
   color: white;
 }
 .noteEdit {
-  width: 90%;
+  width: 100%;
   border: none;
+  background-color: #f5f5f5;
 }
 .editForm {
   padding-bottom: 2px;
