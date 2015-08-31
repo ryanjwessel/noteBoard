@@ -54,11 +54,21 @@ input#note-content {
 .note-enter {
   margin: 20.5px 0px;
   border: none;
-  background-color: #F9A825;
+  background-color: #8BC34A;
   color: white;
 }
 .note-enter:hover {
-  background-color: #F57F17;
+  background-color: #689F38;
+  color: white;
+}
+.note-delete {
+  margin: 20.5px 0px;
+  background-color: #F44336;
+  color: white;
+  border: none;
+}
+.note-delete:hover {
+  background-color: #D32F2F;
   color: white;
 }
 .note-enter > img {
